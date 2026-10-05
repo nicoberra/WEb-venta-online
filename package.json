@@ -1,0 +1,14 @@
+{
+  "name": "tienda-crm-plantilla",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plantilla de tienda online conectada a un CRM en Google Sheets + Apps Script",
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs 8080",
+    "test": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "node --test --test-concurrency=1 tests/e2e/*.e2e.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {}
+}
