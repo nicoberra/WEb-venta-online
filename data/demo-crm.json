@@ -1,0 +1,30 @@
+{
+  "_nota": "Datos FICTICIOS para el modo demostración. Simulan lo que habría en la planilla del CRM (incluye campos privados como costo y notas internas, que la tienda NO muestra). No hay fotos: se ven como 'FOTO DE PRODUCTO' hasta que se carguen desde el panel.",
+  "settings": {},
+  "products": [
+    { "id": "DEMO-001", "name": "Taza de cerámica esmaltada", "description": "Taza de 350 ml apta para lavavajillas y microondas. Terminación esmaltada artesanal; cada pieza puede variar levemente.", "category": "Cocina", "price": 8900, "compareAtPrice": 10500, "cost": 3800, "stock": 14, "status": "Publicado", "featured": true, "image": "", "gallery": [], "internalNotes": "Proveedor ficticio A", "variants": [
+      { "id": "DEMO-001-AR", "name": "Color: Arena", "price": null, "stock": 6, "active": true },
+      { "id": "DEMO-001-VE", "name": "Color: Verde oliva", "price": null, "stock": 8, "active": true },
+      { "id": "DEMO-001-NE", "name": "Color: Negro mate", "price": 9600, "stock": 0, "active": true }
+    ] },
+    { "id": "DEMO-002", "name": "Set de 4 individuales de lino", "description": "Individuales de 45 x 35 cm en mezcla de lino y algodón. Lavables a máquina en ciclo delicado.", "category": "Mesa", "price": 15400, "compareAtPrice": null, "cost": 7200, "stock": 7, "status": "Publicado", "featured": true, "image": "", "gallery": [], "internalNotes": "", "variants": [] },
+    { "id": "DEMO-003", "name": "Manta tejida liviana", "description": "Manta de 130 x 170 cm tejida en algodón reciclado. Ideal para sillón o pie de cama.", "category": "Textil", "price": 32900, "compareAtPrice": null, "cost": 15000, "stock": 0, "status": "Publicado", "featured": true, "image": "", "gallery": [], "internalNotes": "", "variants": [
+      { "id": "DEMO-003-GR", "name": "Color: Gris claro", "price": null, "stock": 3, "active": true },
+      { "id": "DEMO-003-TE", "name": "Color: Terracota", "price": null, "stock": 2, "active": true },
+      { "id": "DEMO-003-AZ", "name": "Color: Azul noche", "price": null, "stock": 0, "active": false }
+    ] },
+    { "id": "DEMO-004", "name": "Frasco hermético de vidrio 1 L", "description": "Frasco con tapa de bambú y burlete de silicona. Para guardar legumbres, harinas o café.", "category": "Cocina", "price": 6200, "compareAtPrice": null, "cost": 2400, "stock": 25, "status": "Publicado", "featured": false, "image": "", "gallery": [], "internalNotes": "", "variants": [] },
+    { "id": "DEMO-005", "name": "Almohadón con funda removible", "description": "Almohadón de 45 x 45 cm con relleno de fibra siliconada. La funda tiene cierre oculto.", "category": "Textil", "price": 12800, "compareAtPrice": null, "cost": 5100, "stock": 0, "status": "Publicado", "featured": false, "image": "", "gallery": [], "internalNotes": "", "variants": [
+      { "id": "DEMO-005-CR", "name": "Color: Crudo", "price": null, "stock": 5, "active": true },
+      { "id": "DEMO-005-MO", "name": "Color: Mostaza", "price": null, "stock": 1, "active": true }
+    ] },
+    { "id": "DEMO-006", "name": "Tabla de madera para picar", "description": "Tabla de 40 x 25 cm en madera maciza con canaleta perimetral. Curada con aceite apto alimentos.", "category": "Cocina", "price": 11500, "compareAtPrice": null, "cost": 4600, "stock": 2, "status": "Publicado", "featured": false, "image": "", "gallery": [], "internalNotes": "Últimas del lote", "variants": [] },
+    { "id": "DEMO-007", "name": "Vela aromática en vaso", "description": "Vela de cera de soja de 200 g con mecha de algodón. Duración aproximada: 40 horas.", "category": "Deco", "price": 7400, "compareAtPrice": null, "cost": 2900, "stock": 0, "status": "Publicado", "featured": false, "image": "", "gallery": [], "internalNotes": "", "variants": [
+      { "id": "DEMO-007-LA", "name": "Aroma: Lavanda", "price": null, "stock": 9, "active": true },
+      { "id": "DEMO-007-CI", "name": "Aroma: Cítricos", "price": null, "stock": 4, "active": true }
+    ] },
+    { "id": "DEMO-008", "name": "Florero de vidrio soplado", "description": "Florero de 22 cm de alto. Pieza artesanal: puede tener pequeñas burbujas propias del proceso.", "category": "Deco", "price": 18900, "compareAtPrice": null, "cost": 8800, "stock": 0, "status": "Agotado", "featured": false, "image": "", "gallery": [], "internalNotes": "Reponer en 30 días", "variants": [] },
+    { "id": "DEMO-009", "name": "Servilletas de algodón x 6", "description": "Servilletas de 40 x 40 cm con dobladillo cosido. Algodón 100 %.", "category": "Mesa", "price": 9800, "compareAtPrice": 11900, "cost": 4000, "stock": 11, "status": "Publicado", "featured": false, "image": "", "gallery": [], "internalNotes": "", "variants": [] },
+    { "id": "DEMO-010", "name": "Bandeja de metal redonda", "description": "Bandeja de 35 cm de diámetro con pintura epoxi. Producto en preparación: no visible en la tienda.", "category": "Deco", "price": 14200, "compareAtPrice": null, "cost": 6000, "stock": 6, "status": "Pausado", "featured": false, "image": "", "gallery": [], "internalNotes": "Esperando fotos", "variants": [] }
+  ]
+}

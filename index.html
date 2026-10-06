@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Política de seguridad de contenido: solo scripts propios, conexiones a la
+    API de Apps Script y fotos por https. Si activás Cloudflare Turnstile,
+    agregá https://challenges.cloudflare.com a script-src y frame-src.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; font-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- SEO por defecto (se actualizan desde assets/js/config.js al cargar). Editá también acá para buscadores que no ejecutan JavaScript. -->
+  <title>Tienda Modelo | Tienda online de demostración</title>
+  <meta name="description" content="Tienda online de demostración conectada a un CRM en Google Sheets. Catálogo, carrito y pedidos de prueba.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tienda Modelo">
+  <meta property="og:description" content="Tienda online de demostración conectada a un CRM en Google Sheets.">
+  <meta name="theme-color" content="#1f4d3f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/store.css">
+  <script type="module" src="assets/js/store/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div class="announcement" id="announcement" hidden></div>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#/" id="brand-link" aria-label="Inicio">
+        <span class="brand-mark" id="brand-mark" aria-hidden="true">TM</span>
+        <span class="brand-name" id="brand-name">Tienda Modelo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#/seccion/catalogo">Catálogo</a></li>
+          <li><a href="#/seccion/envios">Envíos y pagos</a></li>
+          <li><a href="#/seccion/preguntas">Preguntas</a></li>
+          <li><a href="#/seccion/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <form class="search" role="search" id="search-form">
+        <label class="sr-only" for="search-input">Buscar productos</label>
+        <input id="search-input" name="q" type="search" placeholder="Buscar productos" autocomplete="off" maxlength="80">
+        <button type="submit" class="icon-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </form>
+
+      <button type="button" class="cart-btn" id="cart-open" aria-haspopup="dialog" aria-controls="cart-drawer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+        <span class="cart-label">Carrito</span>
+        <span class="badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container view-loading" aria-busy="true">
+      <p>Cargando tienda…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid" id="footer"></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="cart-backdrop" hidden></div>
+  <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="drawer-head">
+      <h2 id="cart-title">Tu carrito</h2>
+      <button type="button" class="icon-btn" id="cart-close" aria-label="Cerrar carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="cart-body"></div>
+    <div class="drawer-foot" id="cart-foot"></div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <div class="sr-only" id="live-region" aria-live="polite" aria-atomic="true"></div>
+  <script type="application/ld+json" id="jsonld">{}</script>
+
+  <noscript>
+    <div class="container"><p>Esta tienda necesita JavaScript para mostrar el catálogo actualizado.</p></div>
+  </noscript>
+</body>
+</html>

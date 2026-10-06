@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="no-referrer">
+  <title>Panel de administración</title>
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <script type="module" src="../assets/js/admin/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#admin-main">Saltar al contenido</a>
+  <header class="admin-header">
+    <div class="admin-header-row">
+      <p class="admin-brand"><span class="brand-mark" id="brand-mark" aria-hidden="true">TM</span> <span id="brand-name">Panel</span></p>
+      <div class="admin-session" id="session-box" hidden>
+        <span class="small" id="session-info"></span>
+        <button type="button" class="btn btn-sm btn-ghost" id="logout-btn">Cerrar sesión</button>
+      </div>
+    </div>
+    <nav class="admin-tabs" id="admin-tabs" aria-label="Secciones del panel" hidden>
+      <a href="#productos" data-tab="productos">Productos</a>
+      <a href="#pedidos" data-tab="pedidos">Pedidos</a>
+      <a href="#consultas" data-tab="consultas">Consultas</a>
+      <a href="#facturacion" data-tab="facturacion">Facturación</a>
+      <a href="#textos" data-tab="textos">Textos de la tienda</a>
+      <a href="#sesion" data-tab="sesion">Seguridad</a>
+    </nav>
+  </header>
+
+  <main id="admin-main" class="admin-main" tabindex="-1">
+    <p class="muted">Cargando panel…</p>
+  </main>
+
+  <dialog id="product-dialog" class="admin-dialog" aria-labelledby="pd-title"></dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <div class="sr-only" id="live-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
